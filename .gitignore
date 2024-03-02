@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Dependency directories
+# You might want to include additional directories here depending on your project setup
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Debug files
+debug.log
+
+# Server-specific files
+.DS_Store
