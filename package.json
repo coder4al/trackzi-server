@@ -17,8 +17,9 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0"
   },
-
   "scripts": {
     "dev": "nodemon  server.js"
-  }
+  },
+  "repository": "git@github.com:coder4al/trackzi-server.git",
+  "author": "coder4al <coder4al@gmail.com>"
 }

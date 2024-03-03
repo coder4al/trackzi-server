@@ -1,6 +1,6 @@
 const cors = require("cors");
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const app = express();
 require("./database/db");
 const authRoutes = require("./routes/authRoutes");
@@ -13,13 +13,13 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/task", taskRouter);
 
-// Serve static files from the 'dist' directory
-app.use(express.static(path.join(__dirname, "dist")));
+// // Serve static files from the 'dist' directory
+// app.use(express.static(path.join(__dirname, 'client', "dist")));
 
-// Route all requests to the index.html file in the 'dist' directory
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
+// // Route all requests to the index.html file in the 'dist' directory
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname,'client', "dist", "index.html"));
+// });
 
 // Start the server
 const PORT = process.env.PORT; // Use the PORT environment variable if set, otherwise use port 3000
